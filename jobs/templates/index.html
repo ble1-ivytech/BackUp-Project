@@ -1,0 +1,60 @@
+{% extends 'basic.html' %}
+
+{% block title %} Job Portal {% endblock %}
+{% block home %} active {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+{% load static %}
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    h2 {
+        width: 980px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+        text-align: center;
+    }
+</style>
+<h1>
+    <p>Welcome to ConnectU, home of the finest career oportunities. Start your journey today!</p>
+</h1>
+<div class="container-fluid mt-2">
+    <img src="{% static 'business.png' %}" alt="" width="60%" height="480px" class="center"><br>
+</div>
+<h2 class="center"><br>
+    <p>
+        What Can You Do Here?
+    <ul>
+        <li>Users can signup and search for jobs from well-established names in the business world.</li>
+        <li>
+            Post your company to our website and create applications for our job searchers. (Note: Usernames that create
+            a company listing must be approved by a website administrator. If you are experiencing difficulties logging
+            in, this is the most likely reason.)
+        </li>
+    </ul>
+    </p>
+</h2>
+<div class="container-fluid mt-2" style="background-color: #d61b1b; width: 100%;">
+    <div class="row">
+        <div class="col-md-4">
+            <h3 style="color: aliceblue;">Contact Us</h3>
+            <p style="color: aliceblue">
+                Email:&nbsp;&nbsp;somebody@gmail.com</p>
+            <p style="color: aliceblue">Mobile #:&nbsp;&nbsp;(123) 456-7890</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
